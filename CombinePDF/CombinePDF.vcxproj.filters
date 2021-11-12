@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="qdpf">
+      <UniqueIdentifier>{e955b170-594c-49ad-a807-e36d9b7c163e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qpdf\Buffer.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\BufferInputSource.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\ClosedFileInputSource.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Constants.h">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\DLL.h">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\FileInputSource.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\InputSource.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\JSON.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pipeline.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_Buffer.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_Concatenate.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_Count.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_DCT.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_Discard.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_Flate.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_QPDFTokenizer.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_RunLength.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Pl_StdioFile.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\PointerHolder.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QIntC.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDF.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFAcroFormDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFAnnotationObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\qpdf-c.h">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFCryptoImpl.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFCryptoProvider.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFEFStreamObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFEmbeddedFileDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFExc.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFFileSpecObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFFormFieldObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFMatrix.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFNameTreeObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFNumberTreeObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFObject.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFObjectHandle.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFObjGen.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFOutlineDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFOutlineObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFPageDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFPageLabelDocumentHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFPageObjectHelper.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFStreamFilter.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFSystemError.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFTokenizer.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFWriter.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QPDFXRefEntry.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QTC.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\QUtil.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\RandomDataProvider.hh">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="qpdf\Types.h">
+      <Filter>qdpf</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

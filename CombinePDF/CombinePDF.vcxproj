@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e3eebc42-0566-4600-a66c-86ddfeccc178}</ProjectGuid>
+    <RootNamespace>CombinePDF</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>$(LocalDebuggerWorkingDirectory);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>$(LocalDebuggerWorkingDirectory);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="qpdf\Buffer.hh" />
+    <ClInclude Include="qpdf\BufferInputSource.hh" />
+    <ClInclude Include="qpdf\ClosedFileInputSource.hh" />
+    <ClInclude Include="qpdf\Constants.h" />
+    <ClInclude Include="qpdf\DLL.h" />
+    <ClInclude Include="qpdf\FileInputSource.hh" />
+    <ClInclude Include="qpdf\InputSource.hh" />
+    <ClInclude Include="qpdf\JSON.hh" />
+    <ClInclude Include="qpdf\Pipeline.hh" />
+    <ClInclude Include="qpdf\Pl_Buffer.hh" />
+    <ClInclude Include="qpdf\Pl_Concatenate.hh" />
+    <ClInclude Include="qpdf\Pl_Count.hh" />
+    <ClInclude Include="qpdf\Pl_DCT.hh" />
+    <ClInclude Include="qpdf\Pl_Discard.hh" />
+    <ClInclude Include="qpdf\Pl_Flate.hh" />
+    <ClInclude Include="qpdf\Pl_QPDFTokenizer.hh" />
+    <ClInclude Include="qpdf\Pl_RunLength.hh" />
+    <ClInclude Include="qpdf\Pl_StdioFile.hh" />
+    <ClInclude Include="qpdf\PointerHolder.hh" />
+    <ClInclude Include="qpdf\QIntC.hh" />
+    <ClInclude Include="qpdf\qpdf-c.h" />
+    <ClInclude Include="qpdf\QPDF.hh" />
+    <ClInclude Include="qpdf\QPDFAcroFormDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFAnnotationObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFCryptoImpl.hh" />
+    <ClInclude Include="qpdf\QPDFCryptoProvider.hh" />
+    <ClInclude Include="qpdf\QPDFDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFEFStreamObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFEmbeddedFileDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFExc.hh" />
+    <ClInclude Include="qpdf\QPDFFileSpecObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFFormFieldObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFMatrix.hh" />
+    <ClInclude Include="qpdf\QPDFNameTreeObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFNumberTreeObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFObject.hh" />
+    <ClInclude Include="qpdf\QPDFObjectHandle.hh" />
+    <ClInclude Include="qpdf\QPDFObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFObjGen.hh" />
+    <ClInclude Include="qpdf\QPDFOutlineDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFOutlineObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFPageDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFPageLabelDocumentHelper.hh" />
+    <ClInclude Include="qpdf\QPDFPageObjectHelper.hh" />
+    <ClInclude Include="qpdf\QPDFStreamFilter.hh" />
+    <ClInclude Include="qpdf\QPDFSystemError.hh" />
+    <ClInclude Include="qpdf\QPDFTokenizer.hh" />
+    <ClInclude Include="qpdf\QPDFWriter.hh" />
+    <ClInclude Include="qpdf\QPDFXRefEntry.hh" />
+    <ClInclude Include="qpdf\QTC.hh" />
+    <ClInclude Include="qpdf\QUtil.hh" />
+    <ClInclude Include="qpdf\RandomDataProvider.hh" />
+    <ClInclude Include="qpdf\Types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
